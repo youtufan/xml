@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+    <defs>
+        <linearGradient id="lgr" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(225,223,217);stop-opacity:1"/>
+            <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1"/> 
+        </linearGradient>
+    </defs>
+    <rect width="400" height="400" style="fill:url(#lgr);stroke-width:0"/>
+    <text fill="#543c54" stroke-width="0" x="165" y="250" font-size="200" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" text-anchor="start" xml:space="preserve">?</text>
+	<path id="svg_6" d="m114,400 l-2,-14 l13,-90 l13,-31 l5,-1 l24,37 l4,11 l7,-3 l23,-4 l23,4 l7,3 l4,-11 l24,-37 l5,1 l13,31 l13,90 L287,400Z" stroke-width="0" fill="#543c54"/>
+</svg>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teamintro_old.xsl"?>
+<team>
+<imfomation>
+<teamname>查无此队</teamname>
+<iconintro>因为是查无此队，所以是一片空白~</iconintro>
+<introtext>由同样来自软件二班的三个好朋友组成的队伍，菜并快乐着！</introtext>
+</imfomation>
+<memeber ifleader="yes">
+ <basic>
+  <name>Zhang Sunlanxin</name>
+  <age>20</age>
+  <gender>female</gender>
+  <birth>1998-02-17</birth>
+  <identity>undergraduate</identity>
+  <QQnumb>1042779069</QQnumb>
+ </basic>
+ <education>
+  <college>SouthEast University</college>
+  <speciality>Software engineering</speciality>
+  <studentnumber sID="71116209"/>
+  <studentnumber cardID="213162451"/>
+ </education>
+</memeber>
+
+<memeber ifleader="no">
+ <basic>
+  <name>Wang Mengfan</name>
+  <age>21</age>
+  <gender>female</gender>
+  <birth>1998-07-20</birth>
+  <identity>undergraduate</identity>
+  <QQnumb>1412296254</QQnumb>
+ </basic>
+ <education>
+  <college>SouthEast University</college>
+  <speciality>Software engineering</speciality>
+  <studentnumber sID="71116202"/>
+  <studentnumber cardID="213162841"/>
+ </education>
+ </memeber>
+ 
+ <memeber ifleader="no">
+ <basic>
+  <name>Zou Shiyi</name>
+  <age>20</age>
+  <gender>female</gender>
+  <birth>1998-10-11</birth>
+  <identity>undergraduate</identity>
+  <QQnumb>1262694591</QQnumb>
+ </basic>
+ <education>
+  <college>SouthEast University</college>
+  <speciality>Software engineering</speciality>
+  <studentnumber sID="71116208"/>
+  <studentnumber cardID="213161584"/>
+ </education>
+ </memeber>
+</team>

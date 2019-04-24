@@ -1,0 +1,41 @@
+由于无法声明和保存中文字符，所以含有中文字符的XQuery文件再次打开时偶尔会乱码，说明中将注明乱码的XQuery文件以及中文字符是什么，并用[  ]框起来。
+所有Xquery文件由组长检查过可以在XMLspy正确运行并显示，但仍不能保证在老师收到作业打开时不产生乱码，如若评改时发现乱码，请根据本文档中注明的乱码字符手动修改XQuery文件以保证得到与我们上交的xml结果文档一致的结果。
+
+3-0.对信息模型的修改:
+增添了国家属性 root/section/origin/@country，为后面查询语句的[3]任务作准备
+
+3-1.新增5条数据，保存在 new5.xml；
+通过XQuery语句从原有文档中提取5条与新增数据合并的XQuery文档为 combine.xquery（有中文字符），保存为combine.xml，此处我们对从原有文档中提取的5条信息做了筛选，选择了plot分类为["战斗"]的前五条数据
+
+3-2.Xquery查询语句：（由于新增5条数据与原数据格式相同，所以以下查询均直接对总40条数据进行查询)
+[1]进行三种分类排序
+1. 按照动漫名称排序 
+order_by_animeName.xquery    查询结果：order_by_animeName_XQueryOutput.xml
+2. 按照动漫所属国家排序
+order_by_country.xquery    查询结果：order_by_country_XQueryOutput.xml
+3. 按照动漫来源形式（漫画/小说）排序
+order_by_riginalForm.xquery    查询结果：order_by_riginalForm_XQueryOutput.xml
+
+[2]三种组合条件查询
+1.按某作者+某cv查询（以authorname为["晓佳奈"],cv为["浪川大辅"]为例）
+author_cv.xquery（有中文字符）       
+查询结果：author_cv_XQueryOutput.xml
+按某作品+某剧情分类查询（以anime为["东京食尸鬼"],plot为["战斗"]为例）
+anime_plot.xquery（有中文字符）       
+查询结果：anime_plot_XQueryOutput.xml
+按某制作公司+某场景分类查询（以producer为["Bones"],frames为["自然"]为例）
+producer_frames.xquery （有中文字符）      
+查询结果：producer_frames_XQueryOutput.xml
+
+[3]以countries为根元素，选取了国家，动漫名称，集数，section编号以及剧情和场景信息为强调信息的重新整理查询,并做了格式调整
+countryFirst.xquery
+整理查询结果：countryFirst_XQueryOutput.xml
+
+[4]以animes为根元素，以作品anime为数据记录单位，选取了动漫名称，作者信息和场景分类和描述为强调信息的重新整理查询,做了格式调整，将同一部作品相同分类的场景描述进行集合，并按照动漫名称做了排序，选取了前5部作品作输出（任务要求是前10条记录，但因为我们的数据只涵盖八部作品，所以以作品为数据记录单位时只有8条记录，为了使排序和top查询有意义所以选取top5作为输出）
+animesFirst.xquery
+整理查询结果：animesFirst_XQueryOutput.xml
+
+
+
+
+

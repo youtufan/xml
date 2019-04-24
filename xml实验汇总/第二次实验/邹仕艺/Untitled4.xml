@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GB2312"?>
+<?xml-stylesheet type="text/xsl" href="Untitled10.xsl"?>
+<!DOCTYPE root SYSTEM "anime.dtd">
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="third.xsd">
+	<section section_id="01">
+		<!--01编写人：邹仕艺-->
+		<origin>
+			<anime anime_name="东京食尸鬼">
+              <anime_content>第一季第12集</anime_content>
+                <producer producer_name="Studio Pierrot">BILIBILI</producer>
+			</anime>
+			<original form="漫画">
+				<author author_name="石田翠" author_gender="男" author_birth="1973-06-28"/>
+			</original>
+		</origin>
+		
+		<roletable>
+			<role role_name="金木研" role_gender="男" role_age="19" role_cv="花江夏树">
+             人类→半食种（改造混血）
+            </role>
+		</roletable>
+		 
+		<plot plot_classifier="黑化">   
+		    <plot_content>金木研被青铜树组织掳走，面对神代利世对峙要挟和壁虎的残忍折磨，最终黑化成青铜树组织一员，实则为了保护英同学和古董咖啡店的朋友不受伤害。		 
+		    </plot_content>
+            <linestable>
+				<lines lines_id="1">
+					<speaker>金木研</speaker>
+					                        
+					<linestext keyword="超越/选择错误">错的不是我，是这个世界</linestext>
+				</lines>
+				
+				<lines lines_id="2">
+					<speaker>神代利世</speaker>
+					
+					<linestext keyword="弱肉强食">
+                       生存就意味着弱肉强食
+                    </linestext>
+				</lines>
+				
+			</linestable>
+		</plot>
+		
+		<frames frames_classifier="暗黑">		
+        用彼岸花从洁白变成血红色来暗示金木研从人类思想转变为血腥的食种. 
+        </frames>
+	</section>
+</root>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="GB2312"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="section" minOccurs="1" maxOccurs="100"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="ageType">
+		<xs:restriction base="xs:nonNegativeInteger">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="origin"/>
+				<xs:element ref="roletable"/>
+				<xs:element ref="plot"/>
+				<xs:element ref="frames"/>
+			</xs:sequence>
+			<xs:attribute name="section_id" type="ageType" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="origin">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="anime"/>
+				<xs:element ref="original"/>
+			</xs:sequence>
+			<xs:attribute name="country" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="anime">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="anime_content" type="xs:string"/>
+				<xs:element ref="producer"/>
+			</xs:sequence>
+			<xs:attribute name="anime_name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="producer">
+		<xs:complexType mixed="true">
+			<xs:attribute name="producer_name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="formType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="小说"/>
+			<xs:enumeration value="漫画"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="sexType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="男"/>
+			<xs:enumeration value="女"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="original">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="author"/>
+			</xs:sequence>
+			<xs:attribute name="form" type="formType" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="author">
+		<xs:complexType mixed="true">
+			<xs:attribute name="author_name" type="xs:string" use="required"/>
+			<xs:attribute name="author_gender" type="sexType" use="required"/>
+			<xs:attribute name="author_birth" type="xs:date" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="roletable">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="role" minOccurs="1" maxOccurs="100"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="role">
+		<xs:complexType mixed="true">
+			<xs:attribute name="role_name" type="xs:string" use="required"/>
+			<xs:attribute name="role_gender" type="sexType" use="required"/>
+			<xs:attribute name="role_age" type="ageType" use="required"/>
+			<xs:attribute name="role_cv" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="plotType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="战斗"/>
+			<xs:enumeration value="鬼畜"/>
+			<xs:enumeration value="恋爱"/>
+			<xs:enumeration value="亲情"/>
+			<xs:enumeration value="黑化"/>
+			<xs:enumeration value="独白"/>
+			<xs:enumeration value="变身"/>
+			<xs:enumeration value="日常"/>
+			<xs:enumeration value="抉择"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="plot">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="plot_content" type="xs:string"/>
+				<xs:choice minOccurs="0">
+					<xs:element ref="linestable"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="plot_classifier" type="plotType" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="linestable">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="lines" minOccurs="1" maxOccurs="100"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lines">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="speaker"/>
+				<xs:element ref="linestext"/>
+			</xs:sequence>
+			<xs:attribute name="lines_id" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="speaker" type="xs:string"/>
+	<xs:element name="linestext">
+		<xs:complexType mixed="true">
+			<xs:attribute name="keyword" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="framesType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="黑白"/>
+			<xs:enumeration value="自然"/>
+			<xs:enumeration value="恢弘"/>
+			<xs:enumeration value="暗黑"/>
+			<xs:enumeration value="生活"/>
+			<xs:enumeration value="甜蜜"/>
+			<xs:enumeration value="暴力"/>
+			<xs:enumeration value="血腥"/>
+			<xs:enumeration value="人物"/>
+			<xs:enumeration value="萌系"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="frames">
+		<xs:complexType mixed="true">
+			<xs:attribute name="frames_classifier" type="framesType" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

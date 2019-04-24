@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT root (section)+>
+<!ELEMENT section (origin,roletable,plot,frames)>
+<!ATTLIST section section_id CDATA #REQUIRED>
+<!ELEMENT origin (anime,original)>
+<!ATTLIST origin country CDATA #REQUIRED>
+<!ELEMENT anime (anime_content|producer)*>
+<!ATTLIST anime anime_name CDATA #REQUIRED>
+<!ELEMENT anime_content (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ATTLIST producer producer_name CDATA #REQUIRED>
+<!ELEMENT original (author)>
+<!ATTLIST original form (漫画|小说) "漫画">
+<!ELEMENT author EMPTY>
+<!ATTLIST author author_name CDATA #REQUIRED
+                 author_gender (男|女) "男"
+                 author_birth CDATA #REQUIRED
+>
+<!ELEMENT roletable (role)*>
+<!ELEMENT role (#PCDATA)>
+<!ATTLIST role role_name CDATA #REQUIRED
+               role_gender (男|女) "男"
+               role_age CDATA #IMPLIED
+               role_cv CDATA #REQUIRED
+>
+<!ELEMENT plot (plot_content|linestable)*>
+<!ATTLIST plot plot_classifier (战斗|鬼畜|恋爱|亲情|黑化|独白|变身|日常|抉择) "战斗">
+<!ELEMENT plot_content (#PCDATA)>
+<!ELEMENT linestable (lines)*>
+<!ELEMENT lines (speaker,linestext)>
+<!ATTLIST lines lines_id CDATA #REQUIRED>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT linestext (#PCDATA)>
+<!ATTLIST linestext keyword CDATA #REQUIRED>
+<!ELEMENT frames (#PCDATA)>
+<!ATTLIST frames frames_classifier (黑白|自然|恢弘|暗黑|生活|甜蜜|萌系|血腥|暴力|人物) "生活">

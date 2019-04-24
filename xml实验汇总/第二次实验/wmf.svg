@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg version="1.1" id="ux-skill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="96px" viewBox="0 0 96 96" enable-background="new 0 0 96 96" xml:space="preserve">
+    <line x1="17.1" y1="16.1" x2="78.2" y2="77.2" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="78.2" y1="16.1" x2="17.1" y2="77.2" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="47.7" y1="3.5" x2="47.7" y2="89.8" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="90.8" y1="46.6" x2="4.5" y2="46.6" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="7.8" y1="30.1" x2="87.5" y2="63.2" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="64.2" y1="6.8" x2="31.1" y2="86.5" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="31.1" y1="6.8" x2="64.2" y2="86.5" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+    <line fill="#FFFFFF" x1="87.5" y1="30.1" x2="7.8" y2="63.2" style="stroke:rgb(255,0,0);stroke-width:2"></line>
+   
+    <path fill="#FFFFFF" d="M80.6,46.6c0,18.2-14.8,33-33,33c-18.2,0-33-14.8-33-33c0-18.2,14.8-33,33-33
+                			C65.9,13.7,80.6,28.4,80.6,46.6"></path>
+                			
+    <circle cx="48" cy="47.3" r="20"  fill="#000000"/>
+    <circle cx="59" cy="34.3" r="10"  fill="#FFFFFF"/>
+    <circle cx="35" cy="34.3" r="10"  fill="#FFFFFF"/>
+    <circle cx="59" cy="60.3" r="10"  fill="#FFFFFF"/>
+    <circle cx="35" cy="60.3" r="10"  fill="#FFFFFF"/>
+    
+    <path fill="#CC0033" d="M47.7,75.6c-16,0-29-13-29-29s13-29,29-29s29,13,29,29S63.7,75.6,47.7,75.6z M47.7,20.6
+                			c-14.4,0-26,11.7-26,26s11.7,26,26,26s26-11.7,26-26S62,20.6,47.7,20.6z"></path>
+</svg>
+                			
+                			
+                			

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="VEpost.xsl"?>
+<!DOCTYPE root SYSTEM "anime.dtd">
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
+      xsi:noNamespaceSchemaLocation="third.xsd">
+<section section_id="31">
+  <!--31编写人：张孙兰馨-->
+  <origin>
+   <anime anime_name="紫罗兰永恒花园">
+    <anime_content>第一季特别篇</anime_content>
+    <producer producer_name="京都动画">BILIBILI</producer>
+   </anime>
+   <original form="小说">
+    <author author_name="晓佳奈" author_gender="女" author_birth="1986-04-20"/>
+   </original>
+  </origin>
+  <roletable>
+   <role role_name="薇尔莉特_伊芙加登" role_gender="女" role_age="14" role_cv="石川由依">
+    小时候作为军人参加了大战，因为受到军事教育影响，不能很好地理解别人的感情。在C_H邮政公司开始工作的新人自动手记人偶。
+   </role>
+   <role role_name="奥尔多" role_gender="男" role_age="45" role_cv="安原义人">
+    厄玛的好友，与厄玛一起合作创作歌剧。
+   </role>
+   <role role_name="厄玛" role_gender="女" role_age="30" role_cv="日笠阳子">
+   有名的歌剧演员，恋人在战争中失踪，战争结束后委托奥尔多一起创作有关开辟和平年代的现代歌剧。
+   </role>
+  </roletable>
+  <plot plot_classifier="抉择">
+  <plot_content>
+   奥尔多带着薇尔莉特去看厄玛的排练，告诉她厄玛真正的目的，委托薇尔莉特再尝试接受委托。
+   </plot_content>
+   <linestable>
+    <lines lines_id="01">
+     <speaker>厄玛</speaker>
+     <linestext keyword="新的时代">战争结束，本该迎来和平年代。可大家真的幸福了吗？要开辟新的时代！靠我们每一个人！</linestext>
+    </lines>
+    <lines lines_id="02">
+     <speaker>奥尔多</speaker>
+     <linestext keyword="冻结的心">那场战争给太多人留下了伤痕，如今那些人的心里依然冻结着，既无法感受到新时代来临，也无法举步向前。</linestext>
+    </lines>
+   </linestable>
+  </plot>
+  <frames frames_classifier="生活">
+   奥尔多和薇尔莉特在剧场的幕布后看厄玛排练，唱出歌词。
+  </frames>
+ </section>
+ </root>

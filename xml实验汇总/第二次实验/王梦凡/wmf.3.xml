@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GB2312"?>
+<?xml-stylesheet type="text/xsl" href="newone.xsl"?>
+<!DOCTYPE root SYSTEM "anime.dtd">
+<root>
+ <section section_id="34">
+  <!--34编写人：王梦凡-->
+  <origin >
+   <anime anime_name="我的英雄学院">
+    <anime_content>二季10集</anime_content>
+    <producer producer_name="Bones">BILIBILI</producer>
+   </anime>
+   <original form="漫画">
+    <author author_name="堀越耕平" author_gender="男" author_birth="1986-11-20"/>
+   </original>
+  </origin>
+  <roletable>
+   <role role_name="绿谷出久" role_gender="男" role_age="16" role_cv="山下大辉">
+本作的主人公，脸上有雀斑，看到有寻求帮助的人，就不顾一切冲上去的天生的英雄。有心事的时候就会手捂住嘴喃喃地嘟哝的毛病。出久是世上相当罕见的天生无个性之人(第五世代)，对英雄有着无比狂热的执念，习惯将世上活动的英雄们(包括他的同学们)的能力与事迹用笔记本进行总结，因此对英雄相关的知识非常丰富。
+   </role>
+  </roletable>
+  <plot plot_classifier="战斗">  
+   <plot_content>
+  雄英高中的第一学期结束，在暑假期间进行林间集体特训，在第一天的特训结束之后，决定进行试胆大会，试胆大会期间敌人联合军对同学们发动了突袭。  
+   </plot_content>
+   <linestable>
+    <lines lines_id="01">
+    <speaker>铁哲</speaker>
+    <linestext keyword="差距">同样是通过考试进入雄英学院，参加同样的课程，他们有我们没有的的东西，就是危机，那些家伙能把危机转换成机会</linestext>
+    </lines>
+    <lines lines_id="02">
+    <speaker>绿谷出久</speaker>
+    <linestext keyword="英雄">英雄是赌上自己的性命，将正确的事情变为现实</linestext>
+    </lines>
+    <lines lines_id="03">
+    <speaker>欧尔迈特</speaker>
+    <linestext keyword="英雄">英雄要经常突破险境</linestext>
+    </lines>
+   </linestable>
+  </plot>
+  <frames frames_classifier="自然">
+   悬崖边的天然石洞
+  </frames>
+ </section>
+ </root>
